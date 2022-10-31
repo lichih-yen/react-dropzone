@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './DropZone.css'
 import { useDropzone } from 'react-dropzone'
-import ProgressBar from './ProgressBar'
+import ProgressBar from './ProgressBar.js'
 
 function DropZone() {
   const [isFiles, setIsFiles] = useState(false)

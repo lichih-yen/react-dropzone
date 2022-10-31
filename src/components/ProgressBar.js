@@ -7,7 +7,7 @@ const ProgressBar = ({ fileSize }) => {
   const [isDone, setIsDone] = useState('Uploading...')
 
   useEffect(() => {
-    const time = fileSize < 1000 ? 20 : fileSize > 15000 ? 180 : 100
+    const time = fileSize < 200000 ? 20 : fileSize > 1000000 ? 200 : 100
 
     let timer = setTimeout(() => {
       setFilled(filled + 1)
