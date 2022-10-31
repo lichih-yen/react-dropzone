@@ -1,6 +1,5 @@
-import { useState, useEffect, memo } from 'react'
-
 import './ProgressBar.css'
+import { useState, useEffect, memo } from 'react'
 
 const ProgressBar = ({ fileSize }) => {
   const [filled, setFilled] = useState(0)
