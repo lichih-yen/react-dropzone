@@ -1,24 +1,23 @@
 import { useState } from 'react'
+
 import './DropZone.css'
 import { useDropzone } from 'react-dropzone'
-import ProgressBar from './ProgressBar.js'
+import ProgressBar from './ProgressBar'
 
 function DropZone() {
   const [isFiles, setIsFiles] = useState(false)
   const [openProgress, setOpenProgress] = useState(false)
   const [text, setText] = useState('')
-  const [changeFile, setChangeFile] = useState(false)
 
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
     onDrop: () => {
       setIsFiles(true)
-      setChangeFile(true)
+      setOpenProgress(false)
     },
   })
 
   const onSubmit = () => {
     setOpenProgress(true)
-    setChangeFile(false)
     setText('')
   }
 
@@ -37,7 +36,7 @@ function DropZone() {
               <li key={file.path}>
                 {file.path} - {file.size} bytes
                 <br />
-                {!changeFile && openProgress && <ProgressBar fileSize={file.size} />}
+                {openProgress && <ProgressBar fileSize={file.size} />}
               </li>
             ))}
           </ul>
