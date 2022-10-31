@@ -1,6 +1,6 @@
 import './App.css'
 import React from 'react'
-import DropZone from './components/DropZone.js'
+import DropZone from './components/DropZone.jsx'
 
 function App() {
   return (
