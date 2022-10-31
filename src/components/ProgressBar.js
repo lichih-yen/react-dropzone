@@ -4,7 +4,7 @@ import './ProgressBar.css'
 
 const ProgressBar = ({ fileSize }) => {
   const [filled, setFilled] = useState(0)
-  const [isDone, setIsDone] = useState('Uploading...')
+  const [isDone, setIsDone] = useState('UPLOADING...')
 
   useEffect(() => {
     const time = fileSize < 200000 ? 20 : fileSize > 1000000 ? 200 : 100
@@ -14,7 +14,7 @@ const ProgressBar = ({ fileSize }) => {
     }, time)
 
     if (filled === 100) {
-      setIsDone('Done')
+      setIsDone('DONE!')
       clearTimeout(timer)
     }
 
