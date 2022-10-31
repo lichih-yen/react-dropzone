@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-dropzone/static/css/main.09e3ded6.css",
-    "main.js": "/react-dropzone/static/js/main.28d0d315.js",
+    "main.js": "/react-dropzone/static/js/main.9777b763.js",
     "static/js/787.2427d9b6.chunk.js": "/react-dropzone/static/js/787.2427d9b6.chunk.js",
     "index.html": "/react-dropzone/index.html",
     "main.09e3ded6.css.map": "/react-dropzone/static/css/main.09e3ded6.css.map",
-    "main.28d0d315.js.map": "/react-dropzone/static/js/main.28d0d315.js.map",
+    "main.9777b763.js.map": "/react-dropzone/static/js/main.9777b763.js.map",
     "787.2427d9b6.chunk.js.map": "/react-dropzone/static/js/787.2427d9b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09e3ded6.css",
-    "static/js/main.28d0d315.js"
+    "static/js/main.9777b763.js"
   ]
 }
